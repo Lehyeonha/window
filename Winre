@@ -1,5 +1,17 @@
+show hiden file ,folder and drives 
+hide extension for know  file type 
+hide protected operating system  file( Recommended ) 
 reagentc /info
 reagentc /enable
+ra ngoài màn hình chính tạo folder tên ESD lấy từ window 10/11 -source-install.esd bỏ vô folder ESD
+cd (copy đường dẫn thư  mục ESD vừa mới tạo)
 dism /Get-WimInfo /WimFile:install.esd
 dism /export-image /SourceImageFile:install.esd /SourceIndex:6 /DestinationImageFile:install.wim /Compress:max /CheckIntegrity
+copy file install.wim vừa mới tạo ra từ cmd 
+dán file install.wim vào ổ C(ổ cài win hiện tại)
+tạo folder tên mount
 dism /mount-wim /wimfile:"c:\install.wim" /index:1 /mountdir:c:\mount /readonly
+mount-windows-system32-recovery-winre.wim copy file ra dán vào phần đầu folder mount
+reagentc /info
+reagentc /enable
+setting-recovery sau 3 giây thì khởi động lại
