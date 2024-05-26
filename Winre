@@ -1,5 +1,5 @@
-`reagentc /info`
-`reagentc /enable`
-`dism /Get-WimInfo /WimFile:install.esd`
-`dism /export-image /SourceImageFile:install.esd /SourceIndex:6 /DestinationImageFile:install.wim /Compress:max /CheckIntegrity`
-`dism /mount-wim /wimfile:"c:\install.wim" /index:1 /mountdir:c:\mount /readonly` 
+reagentc /info
+reagentc /enable
+dism /Get-WimInfo /WimFile:install.esd
+dism /export-image /SourceImageFile:install.esd /SourceIndex:6 /DestinationImageFile:install.wim /Compress:max /CheckIntegrity
+dism /mount-wim /wimfile:"c:\install.wim" /index:1 /mountdir:c:\mount /readonly
