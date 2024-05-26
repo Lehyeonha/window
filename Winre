@@ -11,7 +11,7 @@ copy file install.wim vừa mới tạo ra từ cmd
 dán file install.wim vào ổ C(ổ cài win hiện tại)
 tạo folder tên mount
 dism /mount-wim /wimfile:"c:\install.wim" /index:1 /mountdir:c:\mount /readonly
-mount-windows-system32-recovery-winre.wim copy file ra dán vào phần đầu folder mount
+mount-windows-system32-recovery-winre.wim copy file ra dán vào (win gốc) và sau đó thử lại dán vào phần đầu folder mount
 reagentc /info
 reagentc /enable
 setting-recovery sau 3 giây thì khởi động lại
